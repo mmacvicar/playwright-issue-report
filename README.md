@@ -31,8 +31,8 @@ This will:
 
 ## Reason
 
-Using any client certificate configuration, playwright adds a dummy server. In order to set it up, it tries to detect the available protocols from the target server (APNS). However, the APNS part does not use the proxy.
+Using any client certificate configuration, playwright adds a dummy server. In order to set it up, it tries to detect the available protocols from the target server (ALPN). However, the APNS part does not use the proxy.
 
-If the host does not resolve, APNSCache errors fast and assumes http/1.1. Not the expected behavior but at least it works for cases where http 1.1 is the expected protocol.
+If the host does not resolve, ALPNCache errors fast and assumes http/1.1. Not the expected behavior but at least it works for cases where http 1.1 is the expected protocol.
 
 
